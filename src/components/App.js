@@ -1,28 +1,29 @@
-// import { Profile } from './profiles.js'
-import profiles from '../user.json'
 import { GlobalStyle } from './GlobalStyle';
-import { ProfileList } from './ProfileList';
 import 'modern-normalize';
+
+import { Layout } from './Layout.js'
+import profiles from '../user.json'
+import { ProfileList } from './ProfileList/ProfileList';
+
+import statistics from '../data.json'
+import {Statistic} from './Statistics/Statistics'
+
+import friends from '../friends.json'
+import { FriendList } from './FriendList/FriendList'
+
+import transactions from '../transactions.json'
+import {TransactionHistory} from './TransactionHistory/TransactionHistory'
+
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'      
-      }}
-    >
-      {/* <Profile profile={profiles[0]} /> */}
-  
+    <Layout>
       < ProfileList profiles={profiles} />
-      <GlobalStyle/>
+      <Statistic stat={statistics} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
       
-    </div>
+      <GlobalStyle />
+    </Layout>
   );
 };
-
-//} 
