@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const ProfileShape = styled.div`
-background-color: #ebf2fc;
 padding: 200px;
+width: 1200px;
+background-color: #ebf2fc;
 box-shadow: 0 -3em 3em rgba(0,0,0,0.1),
              0 0  0 2px rgb(255,255,255),
              0.3em 0.3em 1em rgba(0,0,0,0.3);;
-border-radius: 3%;           
+border-radius: 3%;    
 `;
 
 export const DescriptionShape = styled.div`
@@ -36,7 +37,7 @@ margin: 0 auto;
 export const TagShape = styled.p`
 color: gray;
 margin-top: -50px;
-margin-bottom: -90px;
+margin-bottom: -80px;
 `;
 
 export const LocationShape = styled.p`
