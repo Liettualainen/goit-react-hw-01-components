@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Layout = styled.div`
-        height: 170vh;
+        // height: 270vh;
         display: flex;
         flex-direction: column;
         gap: 40px;

@@ -5,7 +5,7 @@ import {
   StatisticsItem, StatisticsLabel, StatisticsPercentage
 } from './Statistics.styled';
 
-export const Statistic = ({ title= "Upload stats", stat }) => {
+export const Statistic = ({ title, stat }) => {
     return <StatisticsShape>
 <section class="statistics">       
         <StatisticsTitle>
@@ -33,3 +33,6 @@ Statistic.propTypes = {
     percentage:PropTypes.number.isRequired,
     }).isRequired
 }
+
+
+// title= "Upload stats"
