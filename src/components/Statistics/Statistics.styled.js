@@ -16,16 +16,22 @@ margin-right: auto;
 `;
 
 export const StatisticsTitle = styled.h2`
-width: 100%;
+width:${p => {
+         return (p.isActive) ? '100%' : '0%';
+}};
+padding-top:${p => {   
+   return (p.isActive) ? '100px' : '0px';
+}};
+padding-bottom:${p => {   
+   return (p.isActive) ? '100px' : '0px';
+}};
 font-size: 60px;
 text-transform: uppercase;
 text-align: center;
 font-weight: 700;
 background-color: white;
-padding-top: 100px;
-padding-bottom: 100px;
-// padding-left: 300px;
-// padding-right: 300px;
+// padding-top: 100px;
+// padding-bottom: 100px;
 margin: 0 auto;
 `;
 

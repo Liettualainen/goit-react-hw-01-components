@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const  TransactionHistoryShape = styled.table`
 padding-top: 50px;
+padding-bottom: 50px;
 width: 1200px;
 `;
 
