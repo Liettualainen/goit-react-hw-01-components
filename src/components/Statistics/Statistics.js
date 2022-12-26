@@ -8,7 +8,7 @@ import {
 export const Statistic = ({ title, stat }) => {
     return <StatisticsShape>
 <section class="statistics">       
-        <StatisticsTitle>
+        <StatisticsTitle isActive={title}>
           {title !== undefined && (title)}
         </StatisticsTitle>   
   <StatisticsList>
