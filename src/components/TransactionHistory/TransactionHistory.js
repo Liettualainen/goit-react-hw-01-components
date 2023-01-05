@@ -16,7 +16,7 @@ export const TransactionHistory = ({ items }) => {
         </Descriptionheadshape>
         <DescriptionShape>
             {(items.map(items =>
-                <TransactionHistoryStripedRow>
+                <TransactionHistoryStripedRow key={items.id}>
                     <TransactionHistoryTypecolumn>
                         {items.type}
                     </TransactionHistoryTypecolumn>
